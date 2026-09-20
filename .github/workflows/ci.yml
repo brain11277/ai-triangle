@@ -47,7 +47,13 @@ jobs:
       - name: Widget stores and sends nothing
         run: node tools/verify-widget-purity.mjs
 
+      # Scans the working tree, not a commit range. gitleaks-action derives a
+      # range from the push event and builds "<before>^..<after>", which is an
+      # unknown revision whenever <before> is the root commit. That is exactly
+      # what the first push to a new repository looks like, so the action fails
+      # on the one push where a secret scan matters most. `gitleaks dir` takes
+      # no range and behaves identically on every push.
       - name: Scan for secrets
-        uses: gitleaks/gitleaks-action@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          docker run --rm -v "$PWD:/repo" ghcr.io/gitleaks/gitleaks:latest \
+            dir /repo --no-banner --redact --verbose
