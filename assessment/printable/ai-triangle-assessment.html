@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The AI Triangle: self-assessment</title>
+<!-- Self-contained by design. No external stylesheet, no webfont, no script.
+     It prints to one page on A4 and US Letter, and it opens from a USB stick
+     on a machine with no network. Those are the conditions this gets used in. -->
+<style>
+  :root {
+    --ink: #1A1A1A;
+    --soft: #444;
+    --rule: #bbb;
+    --accent: #6B1F1A;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: var(--ink);
+    line-height: 1.45;
+    max-width: 7.2in;
+    margin: 0 auto;
+    padding: 0.5in 0.4in;
+    font-size: 10.5pt;
+  }
+  h1 { font-size: 17pt; margin: 0 0 2px; color: var(--accent); }
+  .tagline { font-size: 9.5pt; color: var(--soft); margin: 0 0 4px; font-style: italic; }
+  .how { font-size: 9pt; color: var(--soft); margin: 0 0 12px; }
+  .cols { display: flex; gap: 18px; align-items: flex-start; }
+  .left { flex: 1 1 54%; min-width: 0; }
+  .right { flex: 1 1 46%; min-width: 0; }
+  h2 {
+    font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+    font-size: 10pt;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+    margin: 12px 0 5px;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 2px;
+  }
+  h2:first-child { margin-top: 0; }
+  ol { margin: 0; padding-left: 1.3em; }
+  li { margin-bottom: 4px; }
+  .boxes { float: right; margin-left: 8px; font-family: system-ui, sans-serif; font-size: 8pt; color: var(--soft); white-space: nowrap; }
+  .box { display: inline-block; width: 11px; height: 11px; border: 1px solid var(--soft); vertical-align: -2px; margin: 0 2px 0 5px; }
+  .raw {
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 9pt;
+    margin: 5px 0 0;
+    color: var(--soft);
+  }
+  .raw b { color: var(--ink); }
+  .scorekey { font-family: system-ui, sans-serif; font-size: 8.5pt; color: var(--soft); margin: 0 0 8px; }
+  table { border-collapse: collapse; width: 100%; font-family: system-ui, sans-serif; font-size: 8.5pt; }
+  th, td { border: 1px solid var(--rule); padding: 3px 5px; text-align: left; vertical-align: top; }
+  th { background: #f2f2f2; font-weight: 600; }
+  svg { width: 100%; height: auto; display: block; }
+  .tick { font-family: system-ui, sans-serif; font-size: 11px; fill: var(--soft); }
+  .vlabel { font-family: system-ui, sans-serif; font-size: 13px; font-weight: 600; fill: var(--accent); }
+  footer {
+    margin-top: 14px;
+    padding-top: 6px;
+    border-top: 1px solid var(--rule);
+    font-family: system-ui, sans-serif;
+    font-size: 7.5pt;
+    color: var(--soft);
+  }
+  footer a { color: var(--soft); }
+  @media print {
+    body { padding: 0.35in 0.3in; font-size: 10pt; }
+    a { text-decoration: none; }
+    footer { position: static; }
+    @page { margin: 0.35in; }
+  }
+</style>
+</head>
+<body>
+
+<h1>The AI Triangle: self-assessment</h1>
+<p class="tagline">Quality is fixed. You are the variable.</p>
+<p class="how"><strong>Every item is about the last 30 days.</strong> Not your intentions, not a typical month.
+Yes = 2, Partly = 1, No = 0. If you are arguing with yourself about whether it counts, it is a Partly.
+Answer items 1, 6, 7, 9 and 10 with your calendar open.</p>
+
+<div class="cols">
+<div class="left">
+
+  <h2>CI of Self</h2>
+  <ol>
+    <li><span class="boxes">Y<span class="box"></span>P<span class="box"></span>N<span class="box"></span></span>
+      I held a self-review block at least three times in the last 30 days.</li>
+    <li><span class="boxes">Y<span class="box"></span>P<span class="box"></span>N<span class="box"></span></span>
+      I named at least one specific output I accepted that I should have challenged.</li>
+    <li><span class="boxes">Y<span class="box"></span>P<span class="box"></span>N<span class="box"></span></span>
+      I produced at least one piece of work of consequence where the first draft was mine, not a model's.</li>
+    <li><span class="boxes">Y<span class="box"></span>P<span class="box"></span>N<span class="box"></span></span>
+      I can name, right now and without looking it up, one thing I am worse at than six months ago.</li>
+  </ol>
+  <p class="raw">Raw <b>____ / 8</b> &nbsp; → &nbsp; axis <b>____</b></p>
+
+  <h2>CI of Your AI Tools</h2>
+  <ol start="5">
+    <li><span class="boxes">Y<span class="box"></span>P<span class="box"></span>N<span class="box"></span></span>
+      My highest-frequency prompts and agents live in files outside the chat window.</li>
+    <li><span class="boxes">Y<span class="box"></span>P<span class="box"></span>N<span class="box"></span></span>
+      At least one has a change I made in the last 30 days that I could point to in writing.</li>
+    <li><span class="boxes">Y<span class="box"></span>P<span class="box"></span>N<span class="box"></span></span>
+      I retired or merged at least one prompt or agent in the last 90 days.</li>
+    <li><span class="boxes">Y<span class="box"></span>P<span class="box"></span>N<span class="box"></span></span>
+      I can name the specific failure that prompted the last change to my most-used asset.</li>
+  </ol>
+  <p class="raw">Raw <b>____ / 8</b> &nbsp; → &nbsp; axis <b>____</b></p>
+
+  <h2>CI of New AI</h2>
+  <ol start="9">
+    <li><span class="boxes">Y<span class="box"></span>P<span class="box"></span>N<span class="box"></span></span>
+      I held a bounded scan window at least three times, and it ended when the time ended.</li>
+    <li><span class="boxes">Y<span class="box"></span>P<span class="box"></span>N<span class="box"></span></span>
+      I tested exactly one new capability against a real task, with a success criterion written first.</li>
+    <li><span class="boxes">Y<span class="box"></span>P<span class="box"></span>N<span class="box"></span></span>
+      I keep a written not-now list, and at least one item has a revisit date.</li>
+    <li><span class="boxes">Y<span class="box"></span>P<span class="box"></span>N<span class="box"></span></span>
+      I said not-now to something I was genuinely excited about.</li>
+  </ol>
+  <p class="raw">Raw <b>____ / 8</b> &nbsp; → &nbsp; axis <b>____</b></p>
+
+</div>
+<div class="right">
+
+  <h2>Plot it</h2>
+  <p class="scorekey">Raw 0-1 &rarr; 1 &nbsp;|&nbsp; 2-3 &rarr; 2 &nbsp;|&nbsp; 4-5 &rarr; 3 &nbsp;|&nbsp; 6-7 &rarr; 4 &nbsp;|&nbsp; 8 &rarr; 5.
+  Mark your three values, then join them.</p>
+
+  <!-- Tick positions are derived from warped() in the reference widget, so a
+       shape drawn here and a shape drawn by the widget are the same shape. -->
+  <!-- viewBox is cropped to the drawing's actual bounds rather than the
+       widget's 460x384 canvas, so the grid prints as large as the column
+       allows. Tick marks need to be big enough to mark with a pen. -->
+  <svg viewBox="14 22 412 340" role="img" aria-label="Blank AI Triangle plotting grid with five tick marks on each axis.">
+    <polygon points="230,58 70,322 390,322" fill="none" stroke="#999" stroke-width="2" stroke-dasharray="5 5" stroke-linejoin="round"/>
+    <line x1="230" y1="234" x2="230" y2="58"  stroke="#ccc" stroke-width="1"/>
+    <line x1="230" y1="234" x2="70"  y2="322" stroke="#ccc" stroke-width="1"/>
+    <line x1="230" y1="234" x2="390" y2="322" stroke="#ccc" stroke-width="1"/>
+
+    <circle cx="230" cy="234" r="2.5" fill="#666"/>
+
+    <!-- CI of Self, up -->
+    <circle cx="230" cy="190" r="4" fill="none" stroke="#666"/><text class="tick" x="242" y="194">2</text>
+    <circle cx="230" cy="146" r="4" fill="none" stroke="#666"/><text class="tick" x="242" y="150">3</text>
+    <circle cx="230" cy="102" r="4" fill="none" stroke="#666"/><text class="tick" x="242" y="106">4</text>
+    <circle cx="230" cy="58"  r="4" fill="none" stroke="#666"/><text class="tick" x="242" y="62">5</text>
+
+    <!-- CI of Your AI Tools, lower left -->
+    <circle cx="190" cy="256" r="4" fill="none" stroke="#666"/><text class="tick" x="192" y="248">2</text>
+    <circle cx="150" cy="278" r="4" fill="none" stroke="#666"/><text class="tick" x="152" y="270">3</text>
+    <circle cx="110" cy="300" r="4" fill="none" stroke="#666"/><text class="tick" x="112" y="292">4</text>
+    <circle cx="70"  cy="322" r="4" fill="none" stroke="#666"/><text class="tick" x="72"  y="314">5</text>
+
+    <!-- CI of New AI, lower right -->
+    <circle cx="270" cy="256" r="4" fill="none" stroke="#666"/><text class="tick" x="258" y="248">2</text>
+    <circle cx="310" cy="278" r="4" fill="none" stroke="#666"/><text class="tick" x="298" y="270">3</text>
+    <circle cx="350" cy="300" r="4" fill="none" stroke="#666"/><text class="tick" x="338" y="292">4</text>
+    <circle cx="390" cy="322" r="4" fill="none" stroke="#666"/><text class="tick" x="378" y="314">5</text>
+
+    <text class="vlabel" x="230" y="40"  text-anchor="middle">Self</text>
+    <text class="vlabel" x="70"  y="348" text-anchor="middle">Your AI Tools</text>
+    <text class="vlabel" x="390" y="348" text-anchor="middle">New AI</text>
+    <text class="tick"   x="230" y="224" text-anchor="middle">1</text>
+  </svg>
+
+  <h2>Your shape</h2>
+  <table>
+    <tr><th>First row that matches</th><th>Shape</th></tr>
+    <tr><td>All three are 4 or 5</td><td>Balanced</td></tr>
+    <tr><td>All three are 3 or below</td><td>Collapsing</td></tr>
+    <tr><td>Two or more are below 3</td><td>Tilting</td></tr>
+    <tr><td>Exactly one below 3, other two both 4 or 5</td><td>Lopsided</td></tr>
+    <tr><td>Anything else</td><td>Uneven</td></tr>
+  </table>
+  <p class="scorekey"><strong>Stop at the first match.</strong> The order decides the answer.
+  There is no total: the same sum describes very different practices, so only the shape is named.</p>
+
+</div>
+</div>
+
+<footer>
+  The AI Triangle by Brian Rain, licensed under CC BY-NC-SA 4.0. https://brianrain.com/ai-triangle/ &nbsp;·&nbsp;
+  Interpretation for each shape: see SCORING.md in the resource kit, github.com/brain11277/ai-triangle &nbsp;·&nbsp;
+  Self-report. Not a performance measure, and never an input to a review.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AI Triangle widget: theming and collision test</title>
+<!--
+  This page is deliberately hostile. It exists to prove three things:
+
+  1. A host page that defines generic token names (--ink, --sans, --mono, --col)
+     cannot repaint the widget. Those names are used by the microsite this was
+     extracted from, and custom properties inherit THROUGH the shadow boundary,
+     so an unprefixed token set would leak straight in.
+  2. A host element with id="s-self" does not collide with the widget's own
+     slider of the same id. Shadow DOM scopes ids.
+  3. Two instances on one page keep independent state and emit independent
+     events.
+
+  If you change the widget, open this file and confirm all three still hold.
+-->
+<style>
+  /* Hostile host tokens. The widget must ignore every one of these. */
+  :root {
+    --ink: #00FF00;
+    --ink-soft: #FF00FF;
+    --accent: #00FFFF;
+    --serif: "Comic Sans MS", cursive;
+    --sans: "Comic Sans MS", cursive;
+    --mono: "Comic Sans MS", cursive;
+    --col: 120px;
+    --fill: #00FF00;
+  }
+  body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto;
+         padding: 40px 20px; line-height: 1.6; background: #16131A; color: #E8E4EE; }
+  h1, h2 { color: #C9B8E8; }
+  hr { border: none; border-top: 1px solid #332B40; margin: 36px 0; }
+  .panel { background: #1E1926; border: 1px solid #332B40; border-radius: 10px; padding: 22px; }
+  .log { font-family: ui-monospace, Menlo, monospace; font-size: .82rem; color: #9C8FB5; }
+  code { background: #2A2333; padding: 1px 5px; border-radius: 3px; }
+
+  /* Theming the widget: the documented API is the --ait- prefixed set. */
+  .dark-theme {
+    --ait-ink: #E8E4EE;
+    --ait-ink-soft: #9C8FB5;
+    --ait-accent: #C08457;
+    --ait-accent-strong: #E8A87C;
+    --ait-fill: rgba(232, 168, 124, 0.22);
+    --ait-max-width: 100%;
+  }
+</style>
+</head>
+<body>
+
+<h1>Theming and collision test</h1>
+
+<p>This page defines <code>--ink: #00FF00</code>, <code>--sans: Comic Sans MS</code>,
+<code>--col: 120px</code> and an element with <code>id="s-self"</code>. None of it should
+reach the widgets below. If any text is green or set in Comic Sans, the token prefixing has
+regressed.</p>
+
+<p>Host element with the colliding id, for the record:
+<input type="range" id="s-self" min="1" max="5" value="1" aria-label="Host slider that shares an id with the widget's own" /></p>
+
+<hr />
+
+<h2>Instance A, themed dark</h2>
+<div class="panel dark-theme">
+  <ai-triangle-check id="a" heading="Instance A" values="5,5,1"></ai-triangle-check>
+</div>
+<p class="log">A: <span id="loga">none yet</span></p>
+
+<hr />
+
+<h2>Instance B, default palette, readout off</h2>
+<div class="panel">
+  <ai-triangle-check id="b" values="1,2,5" readout="off"></ai-triangle-check>
+</div>
+<p class="log">B: <span id="logb">none yet</span></p>
+<p class="log">Move one. The other must not change.</p>
+
+<hr />
+
+<h2>Diagram with relabelled vertices</h2>
+<div class="panel dark-theme">
+  <ai-triangle-diagram labels="Judgement, My Tooling, What's New"
+                       caption="Relabelled via the labels attribute, for translation."></ai-triangle-diagram>
+</div>
+
+<script src="./ai-triangle-widget.js"></script>
+<script>
+  for (const id of ['a', 'b']) {
+    document.getElementById(id).addEventListener('ai-triangle-change', (e) => {
+      const d = e.detail;
+      document.getElementById('log' + id).textContent =
+        `self=${d.self} tools=${d.tools} newai=${d.newai} → ${d.shape}: ${d.verdict}`;
+    });
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTermSet",
+  "@id": "https://brianrain.com/#frameworks",
+  "name": "Brian Rain: frameworks",
+  "url": "https://brianrain.com",
+  "creator": {
+    "@type": "Person",
+    "@id": "https://brianrain.com/#person",
+    "name": "Brian Rain",
+    "url": "https://brianrain.com"
+  },
+  "hasDefinedTerm": [
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://brianrain.com/ai-triangle/#term",
+      "name": "The AI Triangle",
+      "description": "The AI Triangle is a practitioner-facing project management triangle, published by Brian Rain in 2026, in which Quality is fixed and means the human's discernment is still intact, and the three trade variables are continuous improvement disciplines the practitioner imposes on themselves: continuous improvement of self, of their AI tools, and of new AI.",
+      "url": "https://brianrain.com/ai-triangle/",
+      "inDefinedTermSet": { "@id": "https://brianrain.com/#frameworks" }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://brianrain.com/backlog-inversion/#term",
+      "name": "Backlog Inversion",
+      "description": "A structural inversion of the Agile artifact hierarchy in AI-native product work, in which AI workspaces function as Epics, chat threads as user stories, and prompt libraries as acceptance criteria.",
+      "url": "https://brianrain.com/backlog-inversion/",
+      "inDefinedTermSet": { "@id": "https://brianrain.com/#frameworks" }
+    }
+  ]
+}

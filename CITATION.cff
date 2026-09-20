@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: >-
+  If you use the AI Triangle, please cite it. The materials in this repository
+  are licensed CC BY-NC-SA 4.0 with an additional permission; the code under
+  widget/ and tools/ is licensed BSL 1.1. See LICENSE.md.
+title: "The AI Triangle"
+abstract: >-
+  The AI Triangle is a practitioner-facing project management triangle,
+  published by Brian Rain in 2026, in which Quality is fixed and means the
+  human's discernment is still intact, and the three trade variables are
+  continuous improvement disciplines the practitioner imposes on themselves:
+  continuous improvement of self, of their AI tools, and of new AI.
+version: "1.0.0"
+date-released: 2026-09-20
+type: software
+authors:
+  - given-names: Brian
+    family-names: Rain
+    website: "https://brianrain.com"
+url: "https://brianrain.com/ai-triangle/"
+repository-code: "https://github.com/brain11277/ai-triangle"
+license: CC-BY-NC-SA-4.0
+keywords:
+  - ai-triangle
+  - agile
+  - project-management
+  - continuous-improvement
+  - critical-thinking
+  - cognitive-offloading
+  - ai-literacy
+  - human-in-the-loop
+  - prompt-engineering
+  - agentic-workflows
+  - practitioner-development
+  - self-assessment
+preferred-citation:
+  type: article
+  title: "The Friday Agile Sync: The AI Triangle — When the Practitioner Becomes the Variable"
+  authors:
+    - given-names: Brian
+      family-names: Rain
+      website: "https://brianrain.com"
+  journal: "Inventive Flexibility"
+  year: 2026
+  month: 5
+  url: "https://medium.com/inventive-flexibility/the-friday-agile-sync-the-ai-triangle-when-the-practitioner-becomes-the-variable-0065256bc94e"

@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: The framework itself
+    url: https://brianrain.com/ai-triangle/
+    about: The canonical page, with the interactive version.
+  - name: Is my use free?
+    url: https://github.com/brain11277/ai-triangle/blob/main/COMMERCIAL-LICENSE.md
+    about: Probably yes. There is a table of the cases near the line.

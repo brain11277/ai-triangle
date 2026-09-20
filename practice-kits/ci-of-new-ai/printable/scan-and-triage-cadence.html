@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Scan-and-Triage Cadence</title>
+<!-- Self-contained: no external stylesheet, no webfont, no script. Prints to one page. -->
+<style>
+  :root { --ink:#1A1A1A; --soft:#444; --rule:#bbb; --accent:#6B1F1A; }
+  * { box-sizing: border-box; }
+  body { font-family: Georgia,'Times New Roman',serif; color:var(--ink); line-height:1.4;
+         max-width:7.2in; margin:0 auto; padding:0.45in 0.4in; font-size:10.5pt; }
+  h1 { font-size:16pt; margin:0 0 2px; color:var(--accent); }
+  .sub { font-size:9.5pt; color:var(--soft); margin:0 0 3px; font-style:italic; }
+  .meta { font-family:system-ui,-apple-system,sans-serif; font-size:8.5pt; color:var(--soft);
+          margin:0 0 10px; padding-bottom:6px; border-bottom:1px solid var(--rule); }
+  h2 { font-family:system-ui,-apple-system,sans-serif; font-size:9.5pt; text-transform:uppercase;
+       letter-spacing:.06em; color:var(--accent); margin:11px 0 4px;
+       border-bottom:1px solid var(--rule); padding-bottom:2px; }
+  p { margin:0 0 5px; }
+  .rule-line { border-bottom:1px solid var(--rule); height:15px; margin-bottom:4px; }
+  table { border-collapse:collapse; width:100%; font-family:system-ui,sans-serif; font-size:8.5pt; }
+  th,td { border:1px solid var(--rule); padding:3px 5px; text-align:left; vertical-align:top; }
+  th { background:#f2f2f2; font-weight:600; }
+  td.fill { height:19px; }
+  ul { margin:0 0 5px; padding-left:1.1em; }
+  li { margin-bottom:2px; }
+  .note { font-family:system-ui,sans-serif; font-size:8.5pt; color:var(--soft); margin:4px 0 0; }
+  .box { display:inline-block; width:11px; height:11px; border:1px solid var(--soft);
+         vertical-align:-2px; margin-right:5px; }
+  .done { font-family:system-ui,sans-serif; font-size:8.5pt; }
+  .done div { margin-bottom:3px; }
+  footer { margin-top:12px; padding-top:5px; border-top:1px solid var(--rule);
+           font-family:system-ui,sans-serif; font-size:7.5pt; color:var(--soft); }
+  @media print { body { padding:0.3in 0.28in; font-size:10pt; } @page { margin:0.35in; } }
+</style></head><body>
+
+<h1>Scan-and-Triage Cadence</h1>
+<p class="sub">CI of New AI. Not no. Not yes. Not now. The triage is the skill.</p>
+<p class="meta">Week of ____________ &nbsp;·&nbsp; Started ______ &nbsp;·&nbsp; <strong>Hard stop ______</strong> &nbsp;·&nbsp; 60 minutes, visible timer</p>
+
+<h2>1. Scan (20 min): capture only. No clicking through, no signups, no installs.</h2>
+<table><tr><th style="width:5%">#</th><th>Item</th><th style="width:26%">Source</th></tr>
+<tr><td>1</td><td class="fill"></td><td></td></tr>
+<tr><td>2</td><td class="fill"></td><td></td></tr>
+<tr><td>3</td><td class="fill"></td><td></td></tr>
+<tr><td>4</td><td class="fill"></td><td></td></tr>
+<tr><td>5</td><td class="fill"></td><td></td></tr>
+<tr><td>6</td><td class="fill"></td><td></td></tr>
+<tr><td>7</td><td class="fill"></td><td></td></tr>
+<tr><td>8</td><td class="fill"></td><td></td></tr></table>
+
+<h2>2. Test (25 min): exactly one, against a real task you already have</h2>
+<p class="note">Item under test:</p><div class="rule-line"></div>
+<p class="note">Real task I am testing it against:</p><div class="rule-line"></div>
+<p class="note"><strong>Success criterion, written BEFORE starting:</strong></p>
+<div class="rule-line"></div><div class="rule-line"></div>
+<p class="note">Met the criterion? &nbsp; Y / N &nbsp;&nbsp;&nbsp; Verdict: &nbsp; adopt / discard / not now</p>
+<p class="note">A test that fails its criterion is a successful test. It cost 25 minutes and saved an adoption.</p>
+
+<h2>3. Triage (15 min): every item gets a disposition. The list ends empty.</h2>
+<table><tr><th style="width:5%">#</th><th>Item</th><th style="width:16%">no / yes / not now</th><th style="width:13%">Revisit</th><th style="width:27%">Trigger condition</th></tr>
+<tr><td>1</td><td class="fill"></td><td></td><td></td><td></td></tr>
+<tr><td>2</td><td class="fill"></td><td></td><td></td><td></td></tr>
+<tr><td>3</td><td class="fill"></td><td></td><td></td><td></td></tr>
+<tr><td>4</td><td class="fill"></td><td></td><td></td><td></td></tr>
+<tr><td>5</td><td class="fill"></td><td></td><td></td><td></td></tr>
+<tr><td>6</td><td class="fill"></td><td></td><td></td><td></td></tr>
+<tr><td>7</td><td class="fill"></td><td></td><td></td><td></td></tr>
+<tr><td>8</td><td class="fill"></td><td></td><td></td><td></td></tr></table>
+<p class="note">A trigger condition is an event, not a date. "When my inventory has a row this would replace" is a trigger. "In Q3" is a calendar entry, and a ledger of those becomes a graveyard.</p>
+
+<h2>Ledger maintenance: the two-passes rule</h2>
+<p class="note">Overdue items: ______ &nbsp;&nbsp; Converted to hard no this week: ______</p>
+<p class="note">Two revisit dates gone by with no decision is a hard no. Automatic, and not something to feel bad about.</p>
+
+<h2>Done</h2>
+<div class="done">
+<div><span class="box"></span>The hour ended on the hour</div>
+<div><span class="box"></span>Exactly one test, with a criterion written first</div>
+<div><span class="box"></span>Every intake item dispositioned; intake list empty</div>
+<div><span class="box"></span>Every not-now has a trigger condition, not just a date</div>
+<div><span class="box"></span><strong>I did not sign up for anything</strong></div>
+</div>
+
+<footer>The AI Triangle by Brian Rain, licensed under CC BY-NC-SA 4.0. https://brianrain.com/ai-triangle/ &nbsp;·&nbsp; Full method in the resource kit: github.com/brain11277/ai-triangle</footer>
+</body></html>

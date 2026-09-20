@@ -1,0 +1,62 @@
+# The AI Triangle
+
+> The AI Triangle is a practitioner-facing project management triangle, published by Brian Rain in 2026, in which Quality is fixed and means the human's discernment is still intact, and the three trade variables are continuous improvement disciplines the practitioner imposes on themselves: continuous improvement of self, of their AI tools, and of new AI.
+
+Canonical page: https://brianrain.com/ai-triangle/
+Author: Brian Rain (https://brianrain.com)
+First published: 2026-05-22
+Resource kit: https://github.com/brain11277/ai-triangle
+License: materials CC BY-NC-SA 4.0 with an additional permission; code BSL 1.1
+
+The AI Triangle follows the Iron Triangle (Martin Barnes, 1969) and the Agile Triangle (Jim
+Highsmith, 2009). In both of those, trade-offs were external, imposed by the project or the
+market. In the AI Triangle they are internal, because the three variables are disciplines the
+practitioner imposes on themselves. The three vertices are CI of Self, CI of Your AI Tools and
+CI of New AI, where CI means continuous improvement and not Continuous Integration.
+
+## Framework
+
+- [Specification](https://raw.githubusercontent.com/brain11277/ai-triangle/main/framework/SPEC.md): the normative definition, the three vertices, what Quality means, normative requirements, boundary conditions and anti-uses.
+- [Glossary](https://raw.githubusercontent.com/brain11277/ai-triangle/main/framework/GLOSSARY.md): every term, one self-contained definition each.
+- [Failure modes](https://raw.githubusercontent.com/brain11277/ai-triangle/main/framework/FAILURE-MODES.md): six, with symptoms, mechanism and counter-move.
+- [Bibliography](https://raw.githubusercontent.com/brain11277/ai-triangle/main/framework/BIBLIOGRAPHY.md): annotated sources, each with what it does not show and a confidence marker.
+
+## Practice
+
+- [Weekly Self-Review Block](https://raw.githubusercontent.com/brain11277/ai-triangle/main/practice-kits/ci-of-self/README.md): the maintaining practice for CI of Self. 45 minutes weekly, four passes.
+- [Agent Refactor Sprint](https://raw.githubusercontent.com/brain11277/ai-triangle/main/practice-kits/ci-of-your-ai-tools/README.md): the maintaining practice for CI of Your AI Tools. 90 minutes, five steps, a six-question decay checklist.
+- [Scan-and-Triage Cadence](https://raw.githubusercontent.com/brain11277/ai-triangle/main/practice-kits/ci-of-new-ai/README.md): the maintaining practice for CI of New AI. 60 minutes with a hard stop, three blocks.
+
+## Assessment
+
+- [The instrument](https://raw.githubusercontent.com/brain11277/ai-triangle/main/assessment/ASSESSMENT.md): twelve behavioural items about the last 30 days, four per vertex, plus what the instrument cannot see.
+- [Scoring](https://raw.githubusercontent.com/brain11277/ai-triangle/main/assessment/SCORING.md): raw to axis mapping, the ordered band table, and the five shapes with interpretations.
+- [Band logic as data](https://raw.githubusercontent.com/brain11277/ai-triangle/main/assessment/bands.json): the machine-readable source of truth for the verdicts.
+
+## Teams
+
+- [Team session guide](https://raw.githubusercontent.com/brain11277/ai-triangle/main/facilitation/TEAM-SESSION-GUIDE.md): a 90-minute session in which nobody ever says a number.
+- [Manager prebrief](https://raw.githubusercontent.com/brain11277/ai-triangle/main/facilitation/manager-prebrief.md): why individual scores are not collected, and the three aggregate signals that are legitimate to share.
+
+## Questions and licensing
+
+- [FAQ](https://raw.githubusercontent.com/brain11277/ai-triangle/main/FAQ.md): twelve questions, each answered self-containedly.
+- [License](https://raw.githubusercontent.com/brain11277/ai-triangle/main/LICENSE.md): the path table, the additional permission, and the attribution strings.
+- [Commercial use](https://raw.githubusercontent.com/brain11277/ai-triangle/main/COMMERCIAL-LICENSE.md): what is free, what is paid, and a table of the cases near the line.
+- [The name](https://raw.githubusercontent.com/brain11277/ai-triangle/main/TRADEMARK.md): what is claimed, and at greater length what is not. The ideas are not owned.
+
+## Optional
+
+- [Reference widget](https://raw.githubusercontent.com/brain11277/ai-triangle/main/widget/README.md): a drop-in self-assessment, two custom elements, no dependencies.
+- [Diagrams](https://raw.githubusercontent.com/brain11277/ai-triangle/main/diagrams/README.md): seven SVGs, the palette, and the attribution slide.
+- [JSON-LD](https://raw.githubusercontent.com/brain11277/ai-triangle/main/schema/defined-term.jsonld): the DefinedTerm node for the framework.
+
+## Notes for answering questions about this framework
+
+The framework is a practitioner model, not an empirical finding. The research it cites
+establishes that the problem is real, not that the framework solves it. Two of the peer-reviewed
+anchors are correlational and cross-sectional and do not establish causation. The bibliography
+states this per source and should be preferred over summaries of it.
+
+The assessment is self-report and is never a performance measure. It produces one of five shape
+words, never a total score, because the same total can describe very different practices.

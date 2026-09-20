@@ -1,0 +1,53 @@
+name: verify
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # No npm install. There are no dependencies, deliberately.
+
+      - name: Paper and widget agree across all 125 inputs
+        run: node tools/verify-bands.mjs
+
+      - name: Canonical definition has not drifted
+        run: node tools/verify-definition.mjs
+
+      - name: House style
+        run: node tools/verify-no-emdash.mjs
+
+      - name: Relative links resolve
+        run: node tools/verify-links.mjs
+
+      - name: FAQ schema is in sync with FAQ.md
+        run: node tools/build-faq-schema.mjs --check
+
+      - name: JSON parses
+        run: |
+          set -euo pipefail
+          for f in schema/*.jsonld assessment/bands.json; do
+            node -e "JSON.parse(require('fs').readFileSync('$f','utf8'))" && echo "ok $f"
+          done
+
+      - name: Widget stores and sends nothing
+        run: node tools/verify-widget-purity.mjs
+
+      - name: Scan for secrets
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

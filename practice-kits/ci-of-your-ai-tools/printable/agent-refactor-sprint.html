@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Agent Refactor Sprint</title>
+<!-- Self-contained: no external stylesheet, no webfont, no script. Prints to one page. -->
+<style>
+  :root { --ink:#1A1A1A; --soft:#444; --rule:#bbb; --accent:#6B1F1A; }
+  * { box-sizing: border-box; }
+  body { font-family: Georgia,'Times New Roman',serif; color:var(--ink); line-height:1.4;
+         max-width:7.2in; margin:0 auto; padding:0.45in 0.4in; font-size:10.5pt; }
+  h1 { font-size:16pt; margin:0 0 2px; color:var(--accent); }
+  .sub { font-size:9.5pt; color:var(--soft); margin:0 0 3px; font-style:italic; }
+  .meta { font-family:system-ui,-apple-system,sans-serif; font-size:8.5pt; color:var(--soft);
+          margin:0 0 10px; padding-bottom:6px; border-bottom:1px solid var(--rule); }
+  h2 { font-family:system-ui,-apple-system,sans-serif; font-size:9.5pt; text-transform:uppercase;
+       letter-spacing:.06em; color:var(--accent); margin:11px 0 4px;
+       border-bottom:1px solid var(--rule); padding-bottom:2px; }
+  p { margin:0 0 5px; }
+  .rule-line { border-bottom:1px solid var(--rule); height:15px; margin-bottom:4px; }
+  table { border-collapse:collapse; width:100%; font-family:system-ui,sans-serif; font-size:8.5pt; }
+  th,td { border:1px solid var(--rule); padding:3px 5px; text-align:left; vertical-align:top; }
+  th { background:#f2f2f2; font-weight:600; }
+  td.fill { height:19px; }
+  ul { margin:0 0 5px; padding-left:1.1em; }
+  li { margin-bottom:2px; }
+  .note { font-family:system-ui,sans-serif; font-size:8.5pt; color:var(--soft); margin:4px 0 0; }
+  .box { display:inline-block; width:11px; height:11px; border:1px solid var(--soft);
+         vertical-align:-2px; margin-right:5px; }
+  .done { font-family:system-ui,sans-serif; font-size:8.5pt; }
+  .done div { margin-bottom:3px; }
+  footer { margin-top:12px; padding-top:5px; border-top:1px solid var(--rule);
+           font-family:system-ui,sans-serif; font-size:7.5pt; color:var(--soft); }
+  @media print { body { padding:0.3in 0.28in; font-size:10pt; } @page { margin:0.35in; } }
+</style></head><body>
+
+<h1>Agent Refactor Sprint</h1>
+<p class="sub">CI of Your AI Tools. Done is not a new agent.</p>
+<p class="meta">Date ____________ &nbsp;·&nbsp; light / full &nbsp;·&nbsp; Started ______ &nbsp;·&nbsp; Ended ______ &nbsp;·&nbsp; 90 minutes</p>
+
+<h2>1. Inventory refresh (15 min)</h2>
+<div class="done">
+<div><span class="box"></span>Added everything new since last sprint</div>
+<div><span class="box"></span>Marked anything not run in 60 days as dormant</div>
+<div><span class="box"></span>Every row has a last_changed value, or a blank I have looked at</div>
+</div>
+<p class="note">New rows: ______ &nbsp;&nbsp; Marked dormant: ______</p>
+
+<h2>2. Rank and cut (10 min): runs per week &times; blast radius. Top three only.</h2>
+<table><tr><th style="width:8%">Rank</th><th>Asset</th><th style="width:12%">runs/wk</th><th style="width:10%">blast</th><th style="width:12%">Score</th></tr>
+<tr><td>1</td><td class="fill"></td><td></td><td></td><td></td></tr>
+<tr><td>2</td><td class="fill"></td><td></td><td></td><td></td></tr>
+<tr><td>3</td><td class="fill"></td><td></td><td></td><td></td></tr></table>
+<p class="note">Is the top-ranked one the one you least want to open? That is normal. Open it first.</p>
+
+<h2>3. Decay checklist (40 min): a tick is a problem found</h2>
+<table>
+<tr><th>Question</th><th style="width:11%">Asset 1</th><th style="width:11%">Asset 2</th><th style="width:11%">Asset 3</th></tr>
+<tr><td>Has accreted a second responsibility</td><td></td><td></td><td></td></tr>
+<tr><td>Does not live in a diffable file</td><td></td><td></td><td></td></tr>
+<tr><td>Encodes a model behaviour that has since changed</td><td></td><td></td><td></td></tr>
+<tr><td>No failure example; maintained from memory</td><td></td><td></td><td></td></tr>
+<tr><td>Model doing work a deterministic step could do</td><td></td><td></td><td></td></tr>
+<tr><td>A workflow pretending to be an agent</td><td></td><td></td><td></td></tr>
+</table>
+
+<h2>4. Write the change (15 min)</h2>
+<p class="note">date | asset | what changed | why | <strong>the failure that prompted it</strong> (not optional)</p>
+<div class="rule-line"></div><div class="rule-line"></div><div class="rule-line"></div>
+
+<h2>5. Retire (10 min)</h2>
+<p class="note">Retired or merged: ___________________________ &nbsp; Sprints since last retirement: ______</p>
+<p class="note">Parked ideas for new assets (these go to the not-now ledger, not into the stack today):</p>
+<div class="rule-line"></div>
+
+<h2>Done</h2>
+<div class="done">
+<div><span class="box"></span>Three assets changed, each with a changelog line naming a real failure</div>
+<div><span class="box"></span>One asset retired or merged</div>
+<div><span class="box"></span>Inventory current</div>
+<div><span class="box"></span><strong>I did not build anything new</strong></div>
+</div>
+
+<footer>The AI Triangle by Brian Rain, licensed under CC BY-NC-SA 4.0. https://brianrain.com/ai-triangle/ &nbsp;·&nbsp; Full method in the resource kit: github.com/brain11277/ai-triangle</footer>
+</body></html>

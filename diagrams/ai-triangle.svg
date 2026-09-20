@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="384" viewBox="0 0 460 384" role="img" aria-label="The AI Triangle: three continuous improvement disciplines around You at the center.">
+<!-- The AI Triangle: three continuous improvement disciplines around You at the center.
+       The AI Triangle by Brian Rain. Licensed CC BY-NC-SA 4.0.
+       https://brianrain.com/ai-triangle/
+       Recoloring or editing this file is an adaptation: the result carries the same license. -->
+
+  <rect width="460" height="384" fill="#E8D5B7"/>
+  <polygon points="230,58 70,322 390,322" fill="none" stroke="#B5532A"
+           stroke-width="2.5" stroke-linejoin="round"/>
+  <text x="230" y="240" text-anchor="middle" font-family="'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="19"
+        fill="#6B1F1A">You</text>
+  <circle cx="230" cy="58" r="9" fill="#B5532A"/>
+  <text x="230" y="36" text-anchor="middle" font-family="'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace"
+        font-size="16" font-weight="500" fill="#6B1F1A">Self</text>
+  <circle cx="70" cy="322" r="9" fill="#B5532A"/>
+  <text x="70" y="354" text-anchor="middle" font-family="'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace"
+        font-size="16" font-weight="500" fill="#6B1F1A">Your AI Tools</text>
+  <circle cx="390" cy="322" r="9" fill="#B5532A"/>
+  <text x="390" y="354" text-anchor="middle" font-family="'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace"
+        font-size="16" font-weight="500" fill="#6B1F1A">New AI</text>
+</svg>

@@ -1,0 +1,45 @@
+{
+  "version": "1.0.0",
+  "description": "The verdict logic of the AI Triangle self-assessment, as data. This file is the single source of truth. The reference widget inlines an equivalent implementation, and tools/verify-bands.mjs proves the two agree across all 125 possible inputs.",
+  "canonicalSource": "https://brianrain.com/ai-triangle/",
+  "axis": {
+    "keys": ["self", "tools", "newai"],
+    "min": 1,
+    "max": 5,
+    "note": "1 = none, 5 = consistent practice. See assessment/SCORING.md for the mapping from the twelve-item paper instrument onto this axis."
+  },
+  "evaluation": "Rules are evaluated in order. The first rule whose condition holds wins. The order is load-bearing: allAtMost 3 is tested before the countBelow tests, so (3,3,3) is collapsing rather than uneven, and (2,3,3) is collapsing rather than tilting.",
+  "stability": "The five verdict strings are a stability commitment. They cannot change without a major version. See framework/SPEC.md.",
+  "rules": [
+    {
+      "id": "balanced",
+      "shape": "Balanced",
+      "when": { "allAtLeast": 4 },
+      "verdict": "Balanced. Maintain the rhythm."
+    },
+    {
+      "id": "collapsing",
+      "shape": "Collapsing",
+      "when": { "allAtMost": 3 },
+      "verdict": "The shape is collapsing. Pick one vertex to start with this week. CI of self is usually the right one."
+    },
+    {
+      "id": "tilting",
+      "shape": "Tilting",
+      "when": { "countBelowThreeAtLeast": 2 },
+      "verdict": "Triangle is tilting. The artifact still looks polished. The maintenance is not happening."
+    },
+    {
+      "id": "lopsided",
+      "shape": "Lopsided",
+      "when": { "countBelowThreeEquals": 1, "remainingAtLeast": 4 },
+      "verdict": "Lopsided. The neglected vertex is the one to invest in next."
+    },
+    {
+      "id": "uneven",
+      "shape": "Uneven",
+      "when": { "otherwise": true },
+      "verdict": "Uneven. Invest in the lowest vertex next."
+    }
+  ]
+}

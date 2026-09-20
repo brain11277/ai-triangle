@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="300" viewBox="0 0 760 300" role="img" aria-label="Three project management triangles: Iron 1969, Agile 2009, AI 2026.">
+<!-- Three project management triangles: Iron 1969, Agile 2009, AI 2026.
+       The AI Triangle by Brian Rain. Licensed CC BY-NC-SA 4.0.
+       https://brianrain.com/ai-triangle/
+       Recoloring or editing this file is an adaptation: the result carries the same license. -->
+
+  <rect width="760" height="300" fill="#E8D5B7"/>
+  <g transform="translate(20,0)">
+    <polygon points="110,40 25,190 195,190" fill="none" stroke="#8A8A8A" stroke-width="2.5" stroke-linejoin="round"/>
+    <text x="110" y="24" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#3D3835">Time</text>
+    <text x="25" y="212" text-anchor="start" font-family="'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#3D3835">Cost</text>
+    <text x="195" y="212" text-anchor="end" font-family="'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#3D3835">Quality</text>
+    <text x="110" y="250" text-anchor="middle" font-family="'Source Serif 4', Georgia, 'Times New Roman', serif" font-size="21" font-weight="600" fill="#6B1F1A">Iron Triangle</text>
+    <text x="110" y="272" text-anchor="middle" font-family="'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#9A3D18">1969</text>
+  </g>
+  <g transform="translate(270,0)">
+    <polygon points="110,40 25,190 195,190" fill="none" stroke="#8A8A8A" stroke-width="2.5" stroke-linejoin="round"/>
+    <text x="110" y="24" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#3D3835">Value</text>
+    <text x="25" y="212" text-anchor="start" font-family="'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#3D3835">Quality</text>
+    <text x="195" y="212" text-anchor="end" font-family="'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#3D3835">Constraints</text>
+    <text x="110" y="250" text-anchor="middle" font-family="'Source Serif 4', Georgia, 'Times New Roman', serif" font-size="21" font-weight="600" fill="#6B1F1A">Agile Triangle</text>
+    <text x="110" y="272" text-anchor="middle" font-family="'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#9A3D18">2009</text>
+  </g>
+  <g transform="translate(520,0)">
+    <polygon points="110,40 25,190 195,190" fill="none" stroke="#B5532A" stroke-width="2.5" stroke-linejoin="round"/>
+    <text x="110" y="24" text-anchor="middle" font-family="'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#3D3835">Self</text>
+    <text x="25" y="212" text-anchor="start" font-family="'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#3D3835">Your AI Tools</text>
+    <text x="195" y="212" text-anchor="end" font-family="'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#3D3835">New AI</text>
+    <text x="110" y="250" text-anchor="middle" font-family="'Source Serif 4', Georgia, 'Times New Roman', serif" font-size="21" font-weight="600" fill="#6B1F1A">AI Triangle</text>
+    <text x="110" y="272" text-anchor="middle" font-family="'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#9A3D18">2026</text>
+  </g>
+  <text x="380" y="292" text-anchor="middle" font-family="'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#3D3835">Trade-offs imposed by the project, then still external, then internal.</text>
+</svg>

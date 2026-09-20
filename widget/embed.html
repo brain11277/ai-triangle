@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The AI Triangle self-assessment</title>
+<!-- Iframe target, for hosts that will not allow third-party script tags.
+     The embedding page must set an explicit height: a framed document cannot
+     resize its own frame. About 640px is right at typical widths. -->
+<style>
+  html, body { margin: 0; padding: 0; background: #E8D5B7; }
+  body { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+         padding: 22px; color: #1A1A1A; }
+  ai-triangle-check { --ait-max-width: 100%; }
+  .credit { font-family: ui-monospace, Menlo, monospace; font-size: .72rem;
+            color: #3D3835; margin: 18px 0 0; }
+  .credit a { color: #6B1F1A; }
+</style>
+</head>
+<body>
+
+<ai-triangle-check heading="Where is your triangle right now?" values="4,3,2"></ai-triangle-check>
+
+<p class="credit">
+  <a href="https://brianrain.com/ai-triangle/" target="_blank" rel="noopener">The AI Triangle</a>
+  by Brian Rain, CC BY-NC-SA 4.0. Nothing here is stored or sent.
+</p>
+
+<script src="./ai-triangle-widget.js"></script>
+
+<noscript>
+  <p>JavaScript is off. The paper version works just as well: see the printable assessment in
+  the resource kit at github.com/brain11277/ai-triangle</p>
+</noscript>
+
+</body>
+</html>

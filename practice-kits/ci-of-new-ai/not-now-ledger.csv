@@ -1,0 +1,7 @@
+item,source,date_seen,why_not_now,revisit_date,trigger_condition,passes,revisit_outcome
+# Template. Replace the example rows with your own.
+# trigger_condition is the observable event that would make this worth opening. A date alone
+# is not a trigger. passes counts how many times the revisit date went by with no decision;
+# at 2 the item converts to a hard no. That rule is what keeps this from becoming a graveyard.
+Managed agent runtime,vendor changelog,2026-09-04,Our orchestration is fine and this would be a rewrite,2026-12-01,When oncall-triage-helper next breaks in a way our own code cannot fix,0,
+Spreadsheet-to-chart feature,release notes,2026-09-11,Nice but we have no recurring chart need,2026-11-15,When someone asks me for the same chart twice in a month,1,

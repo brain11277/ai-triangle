@@ -1,0 +1,7 @@
+name,lives_where,purpose,runs_per_week,last_changed,owner,blast_radius,status
+# Template. Replace the three example rows with your own. blast_radius: 1 = only me sees it,
+# 2 = my team sees it, 3 = it leaves the building. status: active | dormant | retired.
+# A blank last_changed means never changed. That is a finding, not a gap to tidy away.
+weekly-report-agent,~/agents/weekly-report.md,Drafts the Friday squad summary from the board,1,,me,2,active
+pr-description-prompt,snippets/pr-desc.txt,Turns a diff into a PR description,12,2026-08-14,me,2,active
+research-scratch,in my head,Ad hoc question answering,20,,me,1,active

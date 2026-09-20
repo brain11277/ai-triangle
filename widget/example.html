@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AI Triangle widget: example</title>
+<!-- Opens straight from the file system. No server, no build, no network. -->
+<style>
+  body { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+         max-width: 820px; margin: 0 auto; padding: 40px 20px; line-height: 1.6;
+         background: #E8D5B7; color: #1A1A1A; }
+  h1 { color: #6B1F1A; }
+  hr { border: none; border-top: 1px solid rgba(181,83,42,.28); margin: 40px 0; }
+  code { background: rgba(255,255,255,.5); padding: 1px 5px; border-radius: 3px; }
+  .log { font-family: ui-monospace, Menlo, monospace; font-size: .85rem; color: #3D3835; }
+</style>
+</head>
+<body>
+
+<h1>The AI Triangle widget</h1>
+<p>Two custom elements, one file, zero dependencies. This page is the minimal case.</p>
+
+<hr />
+
+<h2>The diagram</h2>
+<p>Hover, tap, or tab to a vertex.</p>
+<ai-triangle-diagram></ai-triangle-diagram>
+
+<hr />
+
+<h2>The self-assessment</h2>
+<ai-triangle-check heading="Where is your triangle right now?" values="4,3,2"></ai-triangle-check>
+
+<p class="log">Last <code>ai-triangle-change</code> event: <span id="log">none yet</span></p>
+
+<script src="./ai-triangle-widget.js"></script>
+<script>
+  document.addEventListener('ai-triangle-change', (e) => {
+    const d = e.detail;
+    document.getElementById('log').textContent =
+      `self=${d.self} tools=${d.tools} newai=${d.newai} → ${d.shape}`;
+  });
+</script>
+
+<noscript>
+  <p><strong>JavaScript is off.</strong> The paper version of this assessment works just as
+  well: see <code>assessment/printable/ai-triangle-assessment.html</code> in the resource kit.</p>
+</noscript>
+
+</body>
+</html>
