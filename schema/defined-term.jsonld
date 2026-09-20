@@ -15,10 +15,22 @@
     "name": "Brian Rain",
     "url": "https://brianrain.com"
   },
-  "subjectOf": {
-    "@type": "Article",
-    "headline": "The Friday Agile Sync: The AI Triangle — When the Practitioner Becomes the Variable",
-    "datePublished": "2026-05-22",
-    "url": "https://medium.com/inventive-flexibility/the-friday-agile-sync-the-ai-triangle-when-the-practitioner-becomes-the-variable-0065256bc94e"
-  }
+  "subjectOf": [
+    {
+      "@type": "Book",
+      "name": "Agile Rebuilt for AI",
+      "author": { "@id": "https://brianrain.com/#person" },
+      "datePublished": "2026-06-01",
+      "isbn": "979-8199222839",
+      "publisher": { "@type": "Organization", "name": "Independently published" },
+      "url": "https://brianrain.com/agile-rebuilt-for-ai"
+    },
+    {
+      "@type": "Article",
+      "headline": "The Friday Agile Sync: The AI Triangle — When the Practitioner Becomes the Variable",
+      "author": { "@id": "https://brianrain.com/#person" },
+      "datePublished": "2026-05-22",
+      "url": "https://medium.com/inventive-flexibility/the-friday-agile-sync-the-ai-triangle-when-the-practitioner-becomes-the-variable-0065256bc94e"
+    }
+  ]
 }

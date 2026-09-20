@@ -33,14 +33,31 @@ keywords:
   - agentic-workflows
   - practitioner-development
   - self-assessment
+# The book is the citation of record. The Medium article of 2026-05-22 is
+# where the framework first appeared and remains the genesis; it is listed
+# under references below rather than as the preferred citation.
 preferred-citation:
-  type: article
-  title: "The Friday Agile Sync: The AI Triangle — When the Practitioner Becomes the Variable"
+  type: book
+  title: "Agile Rebuilt for AI"
   authors:
     - given-names: Brian
       family-names: Rain
       website: "https://brianrain.com"
-  journal: "Inventive Flexibility"
+  publisher:
+    name: "Independently published"
   year: 2026
-  month: 5
-  url: "https://medium.com/inventive-flexibility/the-friday-agile-sync-the-ai-triangle-when-the-practitioner-becomes-the-variable-0065256bc94e"
+  month: 6
+  isbn: "979-8199222839"
+  url: "https://brianrain.com/agile-rebuilt-for-ai"
+references:
+  - type: article
+    title: "The Friday Agile Sync: The AI Triangle — When the Practitioner Becomes the Variable"
+    authors:
+      - given-names: Brian
+        family-names: Rain
+        website: "https://brianrain.com"
+    journal: "Inventive Flexibility"
+    year: 2026
+    month: 5
+    url: "https://medium.com/inventive-flexibility/the-friday-agile-sync-the-ai-triangle-when-the-practitioner-becomes-the-variable-0065256bc94e"
+    notes: "Where the AI Triangle first appeared."

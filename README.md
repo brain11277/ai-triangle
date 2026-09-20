@@ -148,7 +148,15 @@ is claimed and, at more length, what is not.
 
 ## How to cite
 
+**Cite the book.** It is the citation of record for the framework.
+
+> Rain, Brian. *Agile Rebuilt for AI*. Independently published, 2026. ISBN 979-8199222839. https://brianrain.com/agile-rebuilt-for-ai
+
+**The genesis**, where the AI Triangle first appeared, ten days before the book:
+
 > Rain, Brian. "The Friday Agile Sync: The AI Triangle — When the Practitioner Becomes the Variable." *Inventive Flexibility*, May 22, 2026. https://brianrain.com/ai-triangle/
+
+**This kit**, if you are citing the worksheets or the instrument specifically:
 
 > Rain, Brian. *The AI Triangle: resource kit*. Version 1.0.0, 2026. https://github.com/brain11277/ai-triangle
 

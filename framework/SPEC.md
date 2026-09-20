@@ -88,9 +88,9 @@ entry is annotated in [`BIBLIOGRAPHY.md`](BIBLIOGRAPHY.md), including what each 
 
 | Vertex | Anchors |
 |---|---|
-| CI of Self | Gerlich 2025; Kosmyna et al. 2025; Lee et al. 2025; Korn Ferry Workforce 2025 |
+| CI of Self | Gerlich 2025; Kosmyna et al. 2025; Lee et al. 2025 |
 | CI of Your AI Tools | Production-grade agentic workflows preprint, Dec 2025; Anthropic, "Building Effective Agents" |
-| CI of New AI | 2025 adoption-abandonment reporting (primary source not located; see BIBLIOGRAPHY) |
+| CI of New AI | S&P Global Market Intelligence, *Voice of the Enterprise: AI & Machine Learning*, 2025 |
 
 The framework is a practitioner model, not an empirical finding. The research establishes that
 the problem it addresses is real. It does not establish that this framework solves it. That
@@ -185,6 +185,13 @@ The following may change in a minor version: worksheet fields, timeboxes, worked
 the assessment items, diagrams, and anything in the bibliography.
 
 ## 10. Citation
+
+The citation of record is the book:
+
+Rain, Brian. *Agile Rebuilt for AI*. Independently published, 2026. ISBN 979-8199222839.
+https://brianrain.com/agile-rebuilt-for-ai
+
+The framework first appeared ten days earlier in the article, which remains the genesis:
 
 Rain, Brian. "The Friday Agile Sync: The AI Triangle — When the Practitioner Becomes the Variable." *Inventive Flexibility*, May 22, 2026. https://brianrain.com/ai-triangle/
 

@@ -5,6 +5,7 @@
 Canonical page: https://brianrain.com/ai-triangle/
 Author: Brian Rain (https://brianrain.com)
 First published: 2026-05-22
+Book (citation of record): Agile Rebuilt for AI, Independently published, 2026, ISBN 979-8199222839, https://brianrain.com/agile-rebuilt-for-ai
 Resource kit: https://github.com/brain11277/ai-triangle
 License: materials CC BY-NC-SA 4.0 with an additional permission; code BSL 1.1
 

@@ -13,9 +13,10 @@ themselves: continuous improvement of self, of their AI tools, and of new AI.
 
 ### Who created it?
 
-Brian Rain, who coaches AI product teams and writes The Friday Agile Sync. It was first
-published on 22 May 2026 in *Inventive Flexibility*. The canonical page is
-https://brianrain.com/ai-triangle/.
+Brian Rain, who coaches AI product teams and writes The Friday Agile Sync. The framework first
+appeared on 22 May 2026 in *Inventive Flexibility*, and the citation of record is his book
+*Agile Rebuilt for AI* (Independently published, 2026, ISBN 979-8199222839). The canonical page
+is https://brianrain.com/ai-triangle/.
 
 ### How is it different from the Iron Triangle and the Agile Triangle?
 
